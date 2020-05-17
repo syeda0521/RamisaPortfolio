@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>SR Portfolio</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(179, 230, 230);
+  height:200px;
+
+  
+}
+
+header {
+  background-color: rgb(48, 68, 177);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+
+section{
+  content: "";
+  display: flex;
+  clear: both;
+  margin-top:20px;
+  margin-left: 35%;
+  
+  
+}
+
+/* Style the footer */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:40px;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
+
+/*footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 100%;
+}*/
+
+.bottomnav a:link, a:visited {
+  
+  height: 10px;
+  color: white;
+  padding-right: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bottomnav a:hover, a:active {
+  background-color: rgb(39, 186, 223);;
+}
+
+/*Styling the top nav*/
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(39, 186, 223);
+  color: black;
+}
+
+.topnav a.active {
+  background-color:  rgb(39, 186, 223);
+  color: white;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+
+</style>
+</head>
+    <body>
+        
+       <!-- Top navigation -->
+<div class="topnav">
+
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="SyedaRamisa.html" class="active">Home</a>
+    </div>
+    
+    <!-- Left-aligned links (default) -->
+    <a href="Contact.html">Contact</a>
+    
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="About.html">About</a>
+      <a href="Academic.html">Academic</a>
+    </div>
+    
+  </div>
+  <header>
+    <p id="demo"></p>
+
+    <script>
+    var i = 0;
+    var txt = "WELCOME TO SYEDA RAMISA'S PORTFOLIO";
+    var speed = 50;
+
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+        
+    }
+    }
+    typeWriter();
+    </script>
+  </header>
+          <section>
+           <center><img src="MyPic.jpg" alt="MyPic" width="370" height="445"></center>
+            
+          </section>
+          <footer class="footer">
+              <center>
+              <div class="bottomnav">
+              
+                <a href="SyedaRamisa.html" class="active">Home</a>
+                <a href="About.html">About</a>
+                <a href="Academic.html">Academic</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+            <small>&copy; Copyright 2020, Syeda Ramisa</small>
+            </center>
+          </footer>
+
+    </body>
+    
+</html>

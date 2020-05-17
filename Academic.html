@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: darkgrey;
+          height: 600px;
+          
+        }
+        
+        header {
+          background-color: rgb(48, 68, 177);
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        }
+        
+        
+        
+        section:{
+          content: "";
+          display: flex;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #333;
+          padding: 10px;
+          text-align: center;
+          color: white;
+          height: 5%;
+        }
+        
+        .bottomnav a:link, a:visited {
+          
+          height: 10px;
+          color: white;
+          padding-right: 40px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        
+        .bottomnav a:hover, a:active {
+          background-color: rgb(39, 186, 223);;
+        }
+        
+        /*Styling the top nav*/
+        .topnav {
+          position: relative;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: rgb(39, 186, 223);
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color:  rgb(39, 186, 223);
+          color: white;
+        }
+        
+        .topnav-centered a {
+          float: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        
+        .topnav-right {
+          float: right;
+        }
+        
+        /* Responsive navigation menu (for mobile devices) */
+        @media screen and (max-width: 600px) {
+          .topnav a, .topnav-right {
+            float: none;
+            display: block;
+          }
+          
+          .topnav-centered a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+          }
+        }
+        
+        
+        </style>
+</head>
+    <body>
+       <!-- Top navigation -->
+<div class="topnav">
+
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="SyedaRamisa.html">Home</a>
+    </div>
+    
+    <!-- Left-aligned links (default) -->
+    <a href="Contact.html">Contact</a>
+    
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="About.html">About</a>
+      <a href="Academic.html" class="active">Academic</a>
+    </div>
+    
+  </div>
+  <embed src="Resume.pdf" type="application/pdf" width="100%" height="700px"/>
+  <footer class="footer">
+    <center>
+    <div class="bottomnav">
+    
+      <a href="SyedaRamisa.html" class="active">Home</a>
+      <a href="About.html">About</a>
+      <a href="Academic.html">Academic</a>
+      <a href="Contact.html">Contact</a>
+  </div>
+  <small>&copy; Copyright 2020, Syeda Ramisa</small>
+  </center>
+</footer>
+    </body>
+</html>
